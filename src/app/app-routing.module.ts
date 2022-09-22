@@ -14,7 +14,27 @@ const routes: Routes = [
   {
     path: 'a-fuga-das-galinhas',
     loadChildren: () => import('./a-fuga-das-galinhas/a-fuga-das-galinhas.module').then( m => m.AFugaDasGalinhasPageModule)
+  },  {
+    path: 'mulan',
+    loadChildren: () => import('./mulan/mulan.module').then( m => m.MulanPageModule)
   },
+  {
+    path: 'pocahontas',
+    loadChildren: () => import('./pocahontas/pocahontas.module').then( m => m.PocahontasPageModule)
+  },
+  {
+    path: 'tarzan',
+    loadChildren: () => import('./tarzan/tarzan.module').then( m => m.TarzanPageModule)
+  },
+  {
+    path: 'hercules',
+    loadChildren: () => import('./hercules/hercules.module').then( m => m.HerculesPageModule)
+  },
+  {
+    path: 'a-dama-e-o-vagabundo',
+    loadChildren: () => import('./a-dama-e-o-vagabundo/a-dama-e-o-vagabundo.module').then( m => m.ADamaEOVagabundoPageModule)
+  },
+
 ];
 
 @NgModule({
